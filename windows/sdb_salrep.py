@@ -115,7 +115,8 @@ def main(parent_frame, lang, database, markerfile):
 		elif to == 'first':
 			window_.pNum = 1
 
-		teacher_table.setData(headers=teacher_table_headers, data=teacher_list[window_.pNum])
+		teacher_table.setData(headers=teacher_table_headers,
+			data=teacher_list[window_.pNum] if len(teacher_list[0]) >= 1 else [])
 		teacher_table.canvas.config(width=700, height=350)
 		teacher_table.set_width(1, 5, 14)
 		def open_edit_window(pos):
