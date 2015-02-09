@@ -92,7 +92,7 @@ english_to_chinese = {
 	"Choose marker file": "选择工资据库",
 	"New marker file": "创造工资据库",
 	"Database backup successful": "创建数据库成功",
-	"Manual entry": "登錄教师",
+	"Manual entry": "登錄教师!", #get new translation for manual entry
 	"School": "School",
 	"Invalid date": "Invalid date",
 	"Teacher print successful": "教师报告成功",

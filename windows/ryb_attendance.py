@@ -114,9 +114,7 @@ def main():
 	
 	def export_database():
 		output_path = filedialog.askdirectory()
-		if output_path != '':
-			output_path = filedialog.askdirectory()
-		else:
+		if output_path == '':
 			return
 		today = datetime.now()
 		date = today.strftime('%m.%d.%y')
@@ -219,7 +217,6 @@ def main():
 		print(encr_config_file.files['school'])
 		database.school = encr_config_file.files['school']
 	
-	#translate(window_, english_to_chinese)
 	bsadd.config(cmd=lambda: showWindow(addS3.main, 'add'))
 	bsscan.config(cmd=lambda: showWindow(scanS22.main))
 	bsscan2.config(cmd=lambda: showWindow(scanOut.main))
